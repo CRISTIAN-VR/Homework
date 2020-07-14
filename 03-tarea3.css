@@ -1,0 +1,83 @@
+@import url("(https://fonts.google.com/specimen/Public+Sans)- Weights:300,400,700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+:root {
+  --vietnam: "Be Vietnam", sans-serif;
+  --ancho: 1440px;
+  --color-darkblue:hsl(233, 26%, 24%) ;
+  --color-limegreen: hsl(136, 65%, 51%);
+  --color-brightcyan:hsl(192, 70%, 51%);
+  --color-grayisblue:hsl(233, 8%, 62%);
+  --color-azul-oscuro: hsl(228, 39%, 23%);
+  --plomo-claro: hsl(0, 0%, 98%);
+  --color-azul-claro: hsl(227, 12%, 61%);
+  --color-rosado: hsl(13, 100%, 96%);
+}
+
+body {
+  font-family: var(--vietnam);
+  background-image: url("./../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% + 100px);
+  background-position-y: -200px;
+}
+
+.btn__started {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__started-left {
+  justify-content: flex-start;
+}
+
+.btn__started > button {
+  border: none;
+  outline: none;
+  background-color: var(--color-limegreen);
+  color: var(--plomo-claro);
+  width: 150px;
+  height: 40px;
+  border-radius: 30px;
+  box-shadow: var(--color-naranja) 0px 2px 10px;
+}
+
+/*---------*/
+.header {
+    max-width: var(--ancho);
+    display: flex;
+    margin: 0 auto;
+    height: 60px;
+    margin-top: 30px;
+  }
+  .header__lista {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__item {
+    margin: 0 20px;
+  }
+  .header__link {
+    text-decoration: none;
+    color: var(--color-azul-oscuro);
+    font-weight: 700;
+  }
+  .header__logo {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__nav {
+    flex: 1;
+    display: flex;
+  }
+  /*--------*/
